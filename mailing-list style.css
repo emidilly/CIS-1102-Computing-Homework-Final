@@ -1,0 +1,138 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddc7c7; /* Base background color */
+    color: #4b3a3a; /* Text color */
+    position: relative; /* Set the body position for layering */
+    overflow: hidden; /* Prevent unwanted scrolling caused by the GIF */
+}
+
+/* Falling Hearts Background */
+body::before {
+    content: ''; /* Creates a pseudo-element */
+    position: fixed; /* Makes the GIF cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: url('falling hearts.gif') no-repeat center center; /* Add GIF */
+    background-size: cover; /* Make the GIF cover the page */
+    z-index: -1; /* Place the GIF behind everything */
+    opacity: 0.5; /* Adjust transparency of the GIF */
+    pointer-events: none; /* Prevent the GIF from blocking interactions */
+}
+
+/* Banner */
+.banner {
+    background-color: #dd5f85; /* Opaque banner background for readability */
+    color: #5f4e4e; /* Text color for the banner */
+    font-size: 1.5em;
+    font-weight: bold; /* Makes the text bold */
+    font-style: italic; /* Makes the text italic */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the banner */
+    margin-bottom: 20px;
+    position: relative; /* Ensures the banner is above the background */
+    z-index: 1; /* Place the banner above the GIF */
+}
+
+
+
+/* Container for form and image */
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between form and image */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between form and image */
+    max-width: 800px; /* Limit container width */
+    margin: 0 auto; /* Center container on the page */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Form Section */
+.form {
+    flex: 1 1 60%; /* Form takes 60% of available space */
+    max-width: 500px; /* Maximum width for the form */
+    min-width: 300px; /* Minimum width for responsiveness */
+}
+
+/* Input Fields */
+input, select {
+    width: 100%; /* Full width of the form container */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px; /* Add padding for better usability */
+    margin: 10px 0;
+    background-color: #ffffff; /* Neutral input background */
+    color: #4b3a3a; /* Text color */
+    outline: none;
+    box-sizing: border-box; /* Ensures consistent padding */
+    font-size: 1em; /* Adjust font size for better readability */
+    min-height: 40px; /* Ensures a comfortable height */
+}
+
+/* Image styling with curved edges */
+.image img {
+    flex: 1 1 35%; /* Image takes 35% of available space */
+    max-width: 300px; /* Limit maximum width */
+    width: 100%; /* Image fills its container */
+    border-radius: 15px; /* Rounded edges */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; /* Center image if smaller screens */
+}
+
+/* Submit Button */
+.submit {
+    background-color: #4b3a3a; /* Same color as the banner */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+}
+
+.submit:hover {
+    background-color: #312222; /* Slightly darker hover effect */
+}
+
+/* Container for form and image */
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between form and image */
+    align-items: center; /* Vertically center items (form and image) */
+    gap: 20px; /* Space between form and image */
+    max-width: 800px; /* Limit container width */
+    margin: 0 auto; /* Center container on the page */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Form Section */
+.form {
+    flex: 1 1 60%; /* Form takes 60% of the available space */
+    max-width: 500px; /* Maximum width for the form */
+    min-width: 300px; /* Minimum width for responsiveness */
+}
+
+/* Image styling with larger size and proper vertical alignment */
+.image {
+    flex: 1 1 35%; /* Allow the image container to take 35% of the space */
+    display: flex; /* Flexbox for the image container */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.image img {
+    max-width: 400px; /* Larger image */
+    width: 100%; /* Responsive image width */
+    border-radius: 15px; /* Rounded edges */
+    display: block; /* Proper block-level alignment */
+    margin: 0; /* No extra margin */
+}

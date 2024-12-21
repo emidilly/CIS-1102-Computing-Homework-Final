@@ -1,0 +1,166 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px; /* Adds a margin around the entire page */
+    padding: 0;
+    background-color: #ddc7c7; /* Light muted pink */
+    color: #4b3a3a; /* Warm brown tone */
+}
+
+/* Falling Hearts Background */
+body::before {
+    content: ''; /* Creates a pseudo-element */
+    position: fixed; /* Makes the GIF cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: url('falling hearts.gif') no-repeat center center; /* Add GIF */
+    background-size: cover; /* Make the GIF cover the page */
+    z-index: -1; /* Place the GIF behind everything */
+    opacity: 0.5; /* Adjust transparency of the GIF */
+    pointer-events: none; /* Prevent the GIF from blocking interactions */
+}
+
+/* Header */
+header {
+    background: #dd5f85; /* Soft muted red */
+    color: #312222; /* Darker text */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px; /* Adds slight rounding to the header */
+    z-index: 1; /* Place the banner above the GIF */
+    position: relative
+}
+
+/* Profile Photo */
+.profile-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Container */
+.container {
+    margin: 20px auto; /* Adds spacing above and below */
+    width: 90%; /* Ensures content stays within a reasonable width */
+    max-width: 1200px; /* Prevents it from stretching too wide on large screens */
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5em;
+    color: #694747;
+    margin: 20px 0 10px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4b3a3a;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #694747; /* Slightly darker */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #694747;
+    text-align: left;
+}
+
+/* Container for Mailing List and Image */
+.mailing-list-container {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: flex-start; /* Align items closer together */
+    align-items: center; /* Vertically center the content and image */
+    gap: 10px; /* Reduced space between the mailing list and image */
+    max-width: 800px; /* Limit container width */
+    margin: 20px auto; /* Center container on the page */
+    padding: 20px; /* Add padding around the container */
+}
+
+/* Mailing List Section */
+.mailing-list {
+    flex: 1; /* Allow the mailing list to take up available space */
+    text-align: center; /* Center-align all text inside */
+}
+
+/* Heading Styling */
+.mailing-list h2 {
+    text-align: center; /* Ensure the heading is centered */
+    margin: 0; /* Remove default margins for cleaner alignment */
+    padding-bottom: 10px; /* Optional: Add spacing below the heading */
+    font-size: 1.5em; /* Adjust the font size if needed */
+    font-weight: bold; /* Make the heading bold */
+}
+
+
+/* Container for Mailing List and Image */
+.mailing-list-container {
+    display: flex; /* Side-by-side layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Spacing between text and image */
+    max-width: 800px; /* Limit width of the section */
+    margin: 50px auto; /* Center container with spacing */
+    padding: 20px; /* Add padding around the section */
+    background-color: #f5e7e7; /* Subtle background color for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Mailing List Text Section */
+.mailing-list {
+    text-align: center; /* Center-align the heading and button */
+    flex: 1; /* Allow the text section to grow */
+}
+
+/* Heading Styling */
+.mailing-list h2 {
+    font-size: 1.8em; /* Larger heading size */
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    color: #4b3a3a; /* Match the design color */
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 12px 25px; /* Larger button size */
+    background-color: #4b3a3a; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover {
+    background-color: #312222; /* Darker hover effect */
+}
+
+/* Mailing List Image */
+.mailing-list-image img {
+    max-width: 150px; /* Adjust size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+

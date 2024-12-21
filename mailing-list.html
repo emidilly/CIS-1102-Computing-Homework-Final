@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailing List</title>
+    <link rel="stylesheet" href="mailing-list style.css">
+</head>
+<body>
+    <div class="banner">
+        Join My Mailing List!
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <form action="index.html" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Full Legal Name" required><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="email@address.com" required><br>
+    
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., 09503370008" pattern="[0-9]{11}" required><br>
+    
+                <label for="address">Address:</label><br>
+                <input id="address" name="address" placeholder="Your Address" rows="3" required><br>
+    
+                <label for="preferences">Email Preferences:</label><br>
+                <select id="preferences" name="preferences">
+                    <option value="news">Open Schedules</option>
+                    <option value="promotions">Important Updates</option>
+                    <option value="events">All</option>
+                </select><br>
+    
+                <button type="submit" class="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="image">
+            <img src="kirby.gif" alt="Decorative Image">
+        </div>
+    </div>
+        
+        
